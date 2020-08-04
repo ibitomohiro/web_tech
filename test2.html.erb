@@ -20,7 +20,7 @@
       <input type="text" name="goya1" value="<%= data.join(' ') %>">
       <input type="submit" name="送信" >
     </form>
-    <% result_false = connection.exec("SELECT * FROM crops WHERE quality = 'false';") %>
+    <% result_false = connection.exec("SELECT * FROM crops WHERE quality = false;") %>
     <% data_false = [] %>
     <% result_false.each do |record| %>
       <%  data_false << 
