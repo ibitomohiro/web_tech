@@ -26,7 +26,7 @@ elsif cgi.has_key?('goya1')
   </html>"
   }
 else cgi.has_key?('goya_false')
-  cgi.out("type" => "text/html", "charset" => "UTF=-8") {
+  cgi.out("type" => "text/html", "charset" => "UTF-8") {
   get2 = cgi['goya_false']
   # HTMLでレスポンスを返却する
   "<html>
