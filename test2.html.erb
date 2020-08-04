@@ -15,7 +15,7 @@
     <% result = connection.exec("select weight, give_for from crops;") %>
     <% data = [] %>
     <% result.each do |record| %>
-      <%  data << "ゴーヤの大きさ：#{record["weight"]} 売った相手：#{record["give_for"]}" %>
+      <%  data << "重さ：#{record["weight"]} 売った相手：#{record["give_for"]}" %>
     <% end %>
 
     <% result1= connection.exec("SELECT * FROM crops WHERE NOT give_for = '自家消費';") %>
